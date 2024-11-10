@@ -15,4 +15,4 @@ elif operation==prod:
     print("the product of the numbers is:",prod)
 else:
     print("the division of the number is",div)
-print("thank you")
+print("thank you!")
