@@ -1,0 +1,18 @@
+num1= int(input("enter the first number to be inserted:"))
+num2=int(input("enter the second number to be inserted "))
+operation=(input("enter the operation(sum,diff,prod,div):"))
+#for the basic operators
+sum=num1+num2
+diff=num1-num2
+prod=num1*num2
+div=num1/num2
+
+if operation==sum:
+    print("sum of the numbers is:",sum)
+elif operation==diff:
+    print("the difference of the numbers is:",diff)
+elif operation==prod:
+    print("the product of the numbers is:",prod)
+else:
+    print("the division of the number is",div)
+print("thank you")
