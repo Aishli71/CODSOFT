@@ -1,0 +1,37 @@
+def task():
+    tasks=[]
+    print("hello user!")
+    total_task=int(input("enter the number of tasks:"))
+    for i in range(1, total_task+1):
+        task_name=input("enter task 1:")
+        tasks.append(task_name)
+
+    print("today tasks are\n{tasks}")
+    while True:
+        oper=int(input("enter 1:Add\n2-Update\n3-Delete\n4-View\n5-Exit/stop"))
+        if oper ==1:
+            add=input("enter the tasks you want to add=")
+            tasks.append(add)
+            print(f"task {add} has been successfully added..")
+        elif oper==2:
+            updated_val= input("enter the task which are to be updated=")
+            if updated_val in tasks:
+                up=input("enter the new task=")
+                ind=tasks.index(updated_val)
+                tasks[ind]=up
+                print("updated task {up}")
+        elif oper==3:
+            del_value=input("which task you want to remove=")
+            if del_value in task:
+                ind=tasks.index(del_value)
+                del tasks[ind]
+                print(f"task{del_value} has been deleted..")
+
+        elif oper==4:
+            print("Total tasks:,{tasks}")    
+
+        elif oper==5:
+            print("end of the program..")
+            break
+        else:
+            print("invalid")
